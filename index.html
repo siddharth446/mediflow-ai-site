@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MediFlow AI — a concept appointment assistant for clinics. Calm, editorial, trust-first. Static design prototype with sample conversations.">
+  <meta name="theme-color" content="#f7f6f1">
+  <title>MediFlow AI — A calmer way to fill a clinic calendar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="masthead">
+    <div class="wrap masthead__inner">
+      <a href="#" class="logo" aria-label="MediFlow AI home">
+        <span class="logo__glyph" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="12" stroke="currentColor" stroke-width="1.6"/><path d="M13 7v12M7 13h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </span>
+        MediFlow<span class="logo__ai">AI</span>
+      </a>
+      <nav class="masthead__nav" aria-label="Primary">
+        <a href="#demo">Try the demo</a>
+        <a href="#principles">Principles</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Plans</a>
+        <a href="#faq">Questions</a>
+      </nav>
+      <a href="#pricing" class="btn btn--solid masthead__cta">See sample plans</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ======== HERO ======== -->
+    <section class="hero">
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="tagline reveal-copy">A studio concept · design prototype · sample data throughout</p>
+          <h1 class="hero__title">The front desk,<br><em>without the 9 a.m.</em> queue.</h1>
+          <p class="hero__lede">MediFlow AI is a concept appointment assistant for small clinics — it answers scheduling questions, proposes open slots, and hands anything clinical to a human. This page is a design study: every conversation shown is written sample copy, not real patient interaction.</p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#demo">Read a sample conversation</a>
+            <a class="btn btn--text" href="#principles">Why we designed it this way <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+          <ul class="hero__assurances" aria-label="Design commitments">
+            <li>No medical advice, ever</li>
+            <li>Human handoff by default</li>
+            <li>Sample data only on this page</li>
+          </ul>
+        </div>
+
+        <!-- Chat demo widget (static) -->
+        <div class="chat-demo" id="demo" role="img" aria-label="Illustration of a sample chat conversation between a patient assistant and a user booking an appointment">
+          <div class="chat-demo__frame">
+            <div class="chat-demo__top">
+              <span class="chat-demo__pulse" aria-hidden="true"></span>
+              <div>
+                <p class="chat-demo__name">Riverbend Family Clinic <span class="chat-demo__role">· assistant</span></p>
+                <p class="chat-demo__status">Sample conversation</p>
+              </div>
+              <span class="chat-demo__menu" aria-hidden="true">⋯</span>
+            </div>
+            <div class="chat-demo__log">
+              <div class="msg msg--bot"><p>Hi — I'm the clinic's scheduling assistant. I can find open appointment times. For anything about symptoms or treatment, I'll connect you with the care team.</p></div>
+              <div class="msg msg--user"><p>Need a check-up next week, morning if possible.</p></div>
+              <div class="msg msg--bot"><p>I found two morning openings with Dr. Alvarez:<br><strong>Tue 9:20 AM</strong> or <strong>Thu 10:40 AM</strong>. Would either work?</p></div>
+              <div class="msg msg--user"><p>Tuesday works. Also — is my rash something to worry about?</p></div>
+              <div class="msg msg--bot msg--care"><p>I don't diagnose — that's for the clinicians. I've added your rash question to Tuesday's visit notes, and the nurse line will call if they'd rather see you sooner.</p></div>
+            </div>
+            <div class="chat-demo__input" aria-hidden="true">
+              <span>Type a message…</span><span class="chat-demo__send">↑</span>
+            </div>
+          </div>
+          <p class="chat-demo__caption">All messages above are illustrative copy written for this concept.</p>
+        </div>
+      </div>
+      <div class="hero__leaves" aria-hidden="true">
+        <svg viewBox="0 0 120 120" class="leaf leaf--1"><path d="M60 10C30 40 25 80 60 110 95 80 90 40 60 10Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M60 25v70" stroke="currentColor" stroke-width="2"/></svg>
+        <svg viewBox="0 0 120 120" class="leaf leaf--2"><path d="M60 10C30 40 25 80 60 110 95 80 90 40 60 10Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M60 25v70" stroke="currentColor" stroke-width="2"/></svg>
+      </div>
+    </section>
+
+    <!-- ======== PRINCIPLES ======== -->
+    <section class="section" id="principles">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="kicker">Design principles</p>
+          <h2>Trust is the feature. Everything else is scheduling.</h2>
+          <p class="sec-lede">Three rules shaped every screen of this concept.</p>
+        </header>
+        <div class="principles">
+          <article class="principle reveal">
+            <span class="principle__n" aria-hidden="true">1</span>
+            <h3>Stay in the lane</h3>
+            <p>The assistant books, reschedules, and answers logistics. The moment a question touches symptoms, medication, or diagnosis, it says so plainly and routes to a human. No hedging, no almost-answers.</p>
+            <p class="principle__note">Design constraint, not a capability claim — this concept never went near patient data.</p>
+          </article>
+          <article class="principle reveal">
+            <span class="principle__n" aria-hidden="true">2</span>
+            <h3>Calm by default</h3>
+            <p>Health software gets louder when stakes are high; this gets quieter. Soft sage, generous line-height, one idea per screen. Urgency is conveyed with words and clear next steps — not red banners.</p>
+            <p class="principle__note">Type: Fraunces for warmth, Figtree for the work. Both chosen for readability at small sizes on clinic tablets.</p>
+          </article>
+          <article class="principle reveal">
+            <span class="principle__n" aria-hidden="true">3</span>
+            <h3>The front desk stays in charge</h3>
+            <p>Every automation has an override. Staff can pause the assistant mid-conversation, edit proposed slots, and review a plain-language log of what it said and why. It drafts; the clinic decides.</p>
+            <p class="principle__note">The concept's admin screens are built around review queues, not dashboards-of-dashboards.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== HOW IT WORKS ======== -->
+    <section class="section section--tinted" id="how">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="kicker">How the concept works</p>
+          <h2>Four steps, one human checkpoint</h2>
+        </header>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step__art" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><rect x="10" y="12" width="44" height="40" rx="6"/><path d="M10 24h44M22 8v8M42 8v8"/><circle cx="26" cy="36" r="3" fill="currentColor" stroke="none"/><circle cx="38" cy="44" r="3"/></svg>
+            </div>
+            <h3>Connect the calendar</h3>
+            <p>The concept reads the clinic's existing schedule — providers, rooms, buffers — and never invents availability it can't see.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__art" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 20a8 8 0 018-8h24a8 8 0 018 8v14a8 8 0 01-8 8H30l-10 8v-8h-2a8 8 0 01-6-6z" transform="translate(0,-4)"/><path d="M24 22h16M24 30h10"/></svg>
+            </div>
+            <h3>Answer the routine</h3>
+            <p>Hours, parking, "do I need fasting?", reschedules — the repetitive 80% gets a fast, sourced answer drawn from the clinic's own handbook.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__art" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="24" cy="22" r="8"/><path d="M10 50c0-9 6-14 14-14s14 5 14 14"/><path d="M42 26l6 6 10-12" /></svg>
+            </div>
+            <h3>Propose, confirm, log</h3>
+            <p>Bookings are proposed with real slots, confirmed by the patient, and written to a plain-language log staff can audit line by line.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__art" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M32 10v10M32 44v10M10 32h10M44 32h10"/><circle cx="32" cy="32" r="12"/><path d="M26 32l4 4 8-8"/></svg>
+            </div>
+            <h3>Hand off, always</h3>
+            <p>Anything clinical, distressed, or ambiguous moves to a human with full context attached — the patient never repeats themselves.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SCOPE / FEATURE LIST ======== -->
+    <section class="section" id="scope">
+      <div class="wrap scope">
+        <div class="scope__col reveal">
+          <p class="kicker">What the concept does</p>
+          <h2>In scope</h2>
+          <ul class="check-list">
+            <li>Appointment booking, rescheduling, and cancellations against real slots</li>
+            <li>Pre-visit instructions from the clinic's own handbook (fasting, arrival time, forms)</li>
+            <li>Waiting-list notes: "a spot opened Thursday" — with human confirmation</li>
+            <li>Post-visit logistics: pharmacy hours, lab locations, paperwork status</li>
+            <li>Quiet escalation: symptom questions become care-team tasks, not answers</li>
+          </ul>
+        </div>
+        <div class="scope__col reveal">
+          <p class="kicker kicker--stop">What it deliberately won't</p>
+          <h2>Out of scope, forever</h2>
+          <ul class="cross-list">
+            <li>Assess, triage, or interpret any symptom</li>
+            <li>Recommend medication, dosages, or supplements</li>
+            <li>Make promises about diagnosis timelines or outcomes</li>
+            <li>Store conversations beyond the clinic's own retention policy</li>
+            <li>Replace a nurse line — it routes to one</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PRICING ======== -->
+    <section class="section section--tinted" id="pricing">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="kicker">Sample plans</p>
+          <h2>Pricing, imagined honestly</h2>
+          <p class="sec-lede">A concept's pricing page should say what a real one often hides: who the product is actually for.</p>
+        </header>
+        <div class="plans">
+          <article class="plan reveal">
+            <h3>Single practice</h3>
+            <p class="plan__price"><span>$149</span><em>/month concept price</em></p>
+            <p>One provider team, one calendar, up to ~400 assisted conversations a month.</p>
+            <ul>
+              <li>Scheduling + logistics answers</li>
+              <li>Staff review queue &amp; transcript logs</li>
+              <li>Handbook import (documents, not scraping)</li>
+            </ul>
+            <a class="btn btn--outline btn--wide" href="#faq">Fit check questionnaire</a>
+          </article>
+          <article class="plan plan--pick reveal">
+            <span class="plan__tag">Where the design spends most care</span>
+            <h3>Group clinic</h3>
+            <p class="plan__price"><span>$399</span><em>/month concept price</em></p>
+            <p>Up to 12 providers with shared rooms, multi-line routing, and per-provider tone settings.</p>
+            <ul>
+              <li>Everything in Single practice</li>
+              <li>Waiting-list workflows with human confirm</li>
+              <li>Front-desk takeover mid-conversation</li>
+              <li>Quarterly transcript audits with your team</li>
+            </ul>
+            <a class="btn btn--solid btn--wide" href="#faq">See a longer sample log</a>
+          </article>
+          <article class="plan reveal">
+            <h3>Care network</h3>
+            <p class="plan__price"><span>Custom</span><em>— priced per site, not per seat</em></p>
+            <p>Multi-location groups needing local phone numbers, translated flows, and regional handbooks.</p>
+            <ul>
+              <li>Per-site calendars &amp; policies</li>
+              <li>Language packs designed with clinic staff</li>
+              <li>On-site onboarding weeks, not webinars</li>
+            </ul>
+            <a class="btn btn--outline btn--wide" href="#faq">Design-partner interest form</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== FAQ ======== -->
+    <section class="section" id="faq">
+      <div class="wrap wrap--narrow">
+        <header class="sec-head reveal">
+          <p class="kicker">Honest answers</p>
+          <h2>Questions a real clinic would ask</h2>
+        </header>
+        <div class="faq reveal">
+          <details>
+            <summary>Is this an actual product clinics can use?</summary>
+            <div class="faq__body"><p>No. MediFlow AI is a studio concept build — an end-to-end design study of what a trustworthy scheduling assistant could look like. Nothing here processes real patient data or connects to real calendars.</p></div>
+          </details>
+          <details>
+            <summary>Where did the demo conversation come from?</summary>
+            <div class="faq__body"><p>We wrote it. The clinic, doctor, and slots are invented names, and the conversation is designed to show the most important moment: the assistant declining to answer a clinical question and routing to the care team instead.</p></div>
+          </details>
+          <details>
+            <summary>Why no testimonials or outcome numbers?</summary>
+            <div class="faq__body"><p>A concept has no users to quote and no outcomes to count. Publishing invented "90% fewer no-shows" figures would be exactly the kind of overclaim this product's whole design exists to avoid.</p></div>
+          </details>
+          <details>
+            <summary>What would a real build need to clear before launch?</summary>
+            <div class="faq__body"><p>At minimum: a HIPAA-compliant architecture with a business associate agreement, security review, clinician-led escalation policies, accessibility audit, and pilots where the front desk can shut it off in one click. The concept is designed so those constraints are visible in the UI, not bolted on later.</p></div>
+          </details>
+          <details>
+            <summary>Which parts of this page are real work?</summary>
+            <div class="faq__body"><p>All of it, as craft: the type system, the chat layout, the responsive behaviour, and the copy decisions are the deliverable. It's built as a single static page — semantic HTML, hand-authored CSS, and a few lines of enhancement JavaScript.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CLOSING ======== -->
+    <section class="closing">
+      <div class="wrap closing__inner reveal">
+        <h2>Software for waiting rooms<br>should feel like one.</h2>
+        <p>Quiet, clear, and always one step from a human. That's the thesis of this concept.</p>
+        <a class="btn btn--solid" href="#demo">Revisit the sample conversation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="logo" aria-label="MediFlow AI home">
+          <span class="logo__glyph" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="12" stroke="currentColor" stroke-width="1.6"/><path d="M13 7v12M7 13h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          MediFlow<span class="logo__ai">AI</span>
+        </a>
+        <p>A concept appointment assistant for small clinics. All content, names, and conversations are invented sample material.</p>
+      </div>
+      <nav aria-label="Product"><h3>Explore</h3>
+        <a href="#demo">Sample conversation</a><a href="#principles">Principles</a><a href="#how">How it works</a><a href="#scope">Scope</a>
+      </nav>
+      <nav aria-label="Business"><h3>Business</h3>
+        <a href="#pricing">Sample plans</a><a href="#faq">Questions</a>
+      </nav>
+      <nav aria-label="Studio"><h3>Studio</h3>
+        <a href="https://nexapulsestudio.netlify.app" rel="noopener">NexaPulse Studio</a>
+        <a href="https://github.com/siddharth446/mediflow-ai-site" rel="noopener">Source on GitHub</a>
+      </nav>
+    </div>
+    <div class="wrap footer__legal">
+      <p>A studio concept build by <a href="https://nexapulsestudio.netlify.app" rel="noopener">NexaPulse Studio</a> — not a live client project. <a href="https://github.com/siddharth446/mediflow-ai-site" rel="noopener">View source on GitHub.</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
